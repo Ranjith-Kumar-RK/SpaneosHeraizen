@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TMS Request</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"></script>
+    <style>
+        .vl {
+            border-left: 1px solid black;
+
+            height: 65px;
+        }
+
+        #exampleFormControlSelect1 {
+            width: 200px;
+        }
+
+        .form-group {
+            padding: 25px;
+        }
+
+        #application {
+            margin-top: 10px;
+        }
+
+        .btn {
+            border: 2px solid #50727C;
+            background-color: white;
+            color: black;
+            padding: 7px 13px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+
+        #row {
+            background-color: rgb(222, 236, 249);
+        }
+
+        hr {
+            border: 1px dashed gray;
+            width: 95%;
+        }
+
+        #yellow {
+            color: #E6983B
+        }
+
+        #edit {
+            color: #4A8BCA
+        }
+
+        #rejected {
+            color: #C47970
+        }
+
+        #approve {
+            color: #4BA07A
+        }
+
+        #new {
+            color: #6BB4C3
+        }
+
+        #eye {
+            color: #00303F
+        }
+
+        #prob {
+            color: #093746
+        }
+        table tr ,th{
+            text-align: left;
+        }
+
+        #text {
+            color: #174250;
+        }
+        .container-fluid{
+            width: 97%;
+        }
+
+        #high {
+            background-color: #AF473C;
+            padding: 0px;
+            margin: 0px;
+            border: 0px;
+        }
+
+        #medium {
+            background-color: #E59332;
+        }
+
+        #low {
+            background-color: #1D8DA4;
+
+        }
+    </style>
+
+</head>
+
+
+
+
+<body>
+
+
+    <div class="row " id="row">
+
+        <div class="col-10 ">
+            <h2 class="center pt-2"> <img src="smiley.gif" height="40" width="40" id="prob"> TICKETING SYSTEM</h2>
+
+
+        </div>
+        <span class="vl"></span>
+        <h4 class="float-center mx-auto py-3"><i class="fa fa-user" style="font-size:24px"></i>M Yallamma</h4>
+
+
+
+
+
+    </div>
+
+    <form>
+
+        <div class="form-group ml-1">
+            <div class="float-left">
+                <label id="prob" for="exampleFormControlSelect1"><strong>Status</strong></label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option id="prob">All</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+
+            <div class="float-left px-5 mt-1" id="application">
+                <label id="prob" for="exampleFormControlSelect1"><strong>Category</strong></label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option id="prob">Application</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                </select>
+            </div>
+            <div class="float-right px-5">
+                <button id="text" type="button" class="btn "><i class="fas fa-plus float-left mr-2"></i>New Ticket
+                    Request</button>
+            </div>
+        </div>
+
+
+    </form>
+
+    <br>
+    <hr class="mx-auto">
+    <div class="container">
+        <h4 class="text-center" id="prob">List My Ticket Request</h4>
+    </div>
+
+<div class="container-fluid">
+    <table class="table px-3 mx-auto text-center ">
+        <thead>
+            <tr>
+                <th id="prob" scope="col">SL #</th>
+                <th id="prob" scope="col">Problem Statement</th>
+                <th id="prob" scope="col">Category</th>
+                <th id="prob" scope="col">Sub-Category</th>
+                <th id="prob" scope="col">Priority</th>
+                <th id="prob" scope="col">Assigned To</th>
+                <th id="prob" scope="col">View/Add Comments</th>
+                <th id="prob" scope="col">Status</th>
+                <th id="prob" scope="col">Edit</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>1</th>
+                <td id="text">Can’t access VPN</td>
+                <td id="text">Server</td>
+                <td id="text">-</td>
+                <td><p id="high">High</p></td>
+                <td id="text">Namith</td>
+                <td id="eye"><i class="fa fa-eye" aria-hidden="true"></i></td>
+                <td id="new">New</td>
+                <td id="edit"><i class='fas fa-pencil-alt' style='font-size:18px'></i></td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td id="text">Can’t login to application</td>
+                <td id="text">Application</td>
+                <td id="text">Airtel</td>
+                <td><p id="high">High</p></td>
+                <td id="text">Pavan D K</td>
+                <td id="eye"><i class="fa fa-eye" aria-hidden="true"></i></td>
+                <td id="new">New</td>
+                <td id="edit"><i class='fas fa-pencil-alt' style='font-size:18px'></i></td>
+
+            </tr>
+            <tr>
+                <th>3</th>
+                <td id="text">Application is not loading</td>
+                <td id="text"> Application</td>
+                <td id="text">Microsoft</td>
+                <td><p id="high">High</p></td>
+                <td id="text">Sahil A</td>
+                <td id="eye"><i class="fa fa-eye" aria-hidden="true"></i>
+                </td>
+                <td id="yellow">Pending</td>
+                <td id="edit"><i class='fas fa-pencil-alt' style='font-size:18px'></i></td>
+            </tr>
+            <tr>
+                <th>4</th>
+                <td id="text">Application is not loading</td>
+                <td id="text">Application</td>
+                <td id="text">Airtel</td>
+                <td><p id="medium">Medium</p></td>
+                <td id="text">Sahil A</td>
+                <td id="eye"><i class="fa fa-eye" aria-hidden="true"></i></td>
+                <td id="edit">On Hold</td>
+                <td id="edit"><i class='fas fa-pencil-alt' style='font-size:18px'></i></td>
+            </tr>
+            <tr>
+                <th>5</th>
+                <td id="text">Can’t login to application</td>
+                <td id="text">Application</td>
+                <td id="text">-</td>
+                <td><p id="medium">Medium</p></td>
+                <td id="text">Pavan D K</td>
+                <td id="eye"><i class="fa fa-eye" aria-hidden="true"></i>
+                </td>
+                <td id="approve">Approved</td>
+                <td id="edit"><i class='fas fa-pencil-alt' style='font-size:18px'></i></td>
+            </tr>
+            <tr>
+                <th>6</th>
+                <td id="text">Can’t access VPN</td>
+                <td id="text">Server</td>
+                <td id="text">-</td>
+                <td><p id="low">Low</p></td>
+                <td id="text">Pavan D K</td>
+                <td id="eye"><i class="fa fa-eye" aria-hidden="true"></i>
+                </td>
+                <td id="rejected">Rejected</td>
+                <td id="edit"><i class='fas fa-pencil-alt' style='font-size:18px'></i></td>
+            </tr>
+            <tr>
+                <th>7</th>
+                <td id="text">Can’t login to application</td>
+                <td id="text">Application</td>
+                <td id="text">Airtel</td>
+                <td><p id="high">High</p></td>
+                <td id="text">Namith</td>
+                <td id="eye"><i class="fa fa-eye" aria-hidden="true"></i>
+                </td>
+                <td id="yellow">Pending</td>
+                <td id="edit"><i class='fas fa-pencil-alt' style='font-size:18px'></i></td>
+            </tr>
+            <tr>
+                <th id="text">8</th>
+                <td id="text">Can’t access VPN</td>
+                <td id="text">Server</td>
+                <td id="text">Namith</td>
+                <td><p id="high">High</p></td>
+                <td id="text">Namith</td>
+                <td id="eye"><i class="fa fa-eye" aria-hidden="true"></i>
+                </td>
+                <td id="yellow">Pending</td>
+                <td id="edit"><i class='fas fa-pencil-alt' style='font-size:18px'></i></td>
+            </tr>
+            <tr>
+                <th>9</th>
+                <td id="text">Application is not loading</td>
+                <td id="text"> Application</td>
+                <td id="text">Microsoft</td>
+                <td><p id="high">High</p></td>
+                <td id="text">Pavan D K</td>
+                <td id="eye"><i class="fa fa-eye" aria-hidden="true"></i>
+                </td>
+                <td id="approve">Approved</td>
+                <td id="edit"><i class='fas fa-pencil-alt' style='font-size:18px'></i></td>
+            </tr>
+            <tr>
+                <th>10</th>
+                <td id="text">Application is not loading</td>
+                <td id="text">Application</td>
+                <td id="text">Microsoft</td>
+                <td><p id="medium">Medium</p></td>
+                <td id="text">Sahil A</td>
+                <td id="eye"><i class="fa fa-eye" aria-hidden="true"></i>
+                </td>
+                <td id="approve">Approved</td>
+                <td id="edit"><i class='fas fa-pencil-alt' style='font-size:18px'></i></td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+    <div>
+
+
+
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>

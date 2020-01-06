@@ -1,0 +1,29 @@
+.card {
+    margin-top: 15px;
+}
+
+span {
+    color: red;
+}
+
+#sub {
+    background-color: #4A8BCA;
+}
+
+.card-body {
+    padding: 0px;
+}
+
+#exampleFormControlSelect1 {
+    width: 200px;
+}
+
+label {
+    color: #3D9970;
+}
+
+.card-title {
+    background-color: #E5E5E5;
+    padding-top: 7px;
+    padding-bottom: 3px;
+}
